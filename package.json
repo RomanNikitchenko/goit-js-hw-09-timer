@@ -1,7 +1,8 @@
 {
-  "name": "parcel-project-template",
+  "name": "goit-js-hw-09-timer",
   "version": "2.0.0",
   "description": "",
+  "main": "index.js",
   "homepage": "https://romannikitchenko.github.io/goit-js-hw-09-timer",
   "scripts": {
     "start": "parcel src/*.html",

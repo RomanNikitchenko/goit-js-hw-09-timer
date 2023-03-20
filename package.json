@@ -1,5 +1,5 @@
 {
-  "name": "goit-js-hw-09-timer",
+  "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://romannikitchenko.github.io/goit-js-hw-09-timer/",
@@ -19,7 +19,8 @@
   },
   "dependencies": {
     "flatpickr": "^4.6.13",
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

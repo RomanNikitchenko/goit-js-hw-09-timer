@@ -1,12 +1,17 @@
+import moment from 'moment';
+
 const timer = document.querySelectorAll('.timer');
 const sdays = document.querySelectorAll('[data-days]');
 const shours = document.querySelectorAll('[data-hours]');
 const sminutes = document.querySelectorAll('[data-minutes]');
 const sseconds = document.querySelectorAll('[data-seconds]');
 
-let timerId = null;
+var timerId = null;
 
-const appointedTime = new Date('2023-03-31 00:00:00');
+var dateBase = '2023-03-31 00:00:00';
+const appointedTime = moment(dateBase).format('yyyy-MM-dd hh:mm:ss');
+
+// const appointedTime = new Date('2023-03-31 00:00:00');
 
 timerId = setInterval(() => {
   const subtractTime = appointedTime - new Date();

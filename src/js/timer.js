@@ -8,13 +8,11 @@ const sseconds = document.querySelectorAll('[data-seconds]');
 
 var timerId = null;
 
-var dateBase = '2023-03-31 00:00:00';
-const appointedTime = moment(dateBase).format('YYYY-MM-DD HH:mm:ss');
+var dateBase = '2023-03-20 14:25:00';
+const appointedTime = moment(dateBase, 'YYYY-MM-DD HH:mm:ss');
 
 timerId = setInterval(() => {
-  const subtractTime = moment
-    .duration(moment(appointedTime).diff(moment()))
-    .asMilliseconds();
+  const subtractTime = moment(appointedTime).diff(moment(), 'milliseconds');
 
   if (subtractTime <= 0) {
     clearInterval(timerId);

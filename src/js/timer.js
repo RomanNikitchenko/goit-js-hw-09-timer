@@ -11,13 +11,10 @@ var timerId = null;
 var dateBase = '2023-03-31 00:00:00';
 const appointedTime = moment(dateBase).format('YYYY-MM-DD HH:mm:ss');
 
-// const appointedTime = new Date('2023-03-31 00:00:00');
-
 timerId = setInterval(() => {
   const subtractTime = moment
     .duration(moment(appointedTime).diff(moment()))
     .asMilliseconds();
-  // const subtractTime = appointedTime - new Date();
 
   if (subtractTime <= 0) {
     clearInterval(timerId);

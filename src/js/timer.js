@@ -9,7 +9,7 @@ const sseconds = document.querySelectorAll('[data-seconds]');
 var timerId = null;
 
 var dateBase = '2023-03-31 00:00:00';
-const appointedTime = moment(dateBase).format('yyyy-MM-dd hh:mm:ss');
+const appointedTime = moment(dateBase).format('YYYY-MM-DD HH:mm:ss');
 
 // const appointedTime = new Date('2023-03-31 00:00:00');
 

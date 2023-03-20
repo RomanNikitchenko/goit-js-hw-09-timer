@@ -13,7 +13,6 @@ timerId = setInterval(() => {
 
   if (subtractTime <= 0) {
     clearInterval(timerId);
-    disabled = false;
     return;
   }
 
